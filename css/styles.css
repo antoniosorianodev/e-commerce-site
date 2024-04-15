@@ -3,25 +3,43 @@
     margin: 0px;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.productSpread {
+    display: flex;
+    flex-flow: row wrap;
+}
+
 .card {
+    display: flex;
+    flex-direction: column;
     border: 3px solid black;
     border-radius: 8px;
-
+    width: 12%;
+    height: 20%;
+    background-color: aqua;
 }
 
 .info {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-}
-
-.name {
-    text-align: left;
-}
-
-.price {
     text-align: right;
 }
 
+.imageAndInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
 .product-image {
-    width: 3%;
+    width: 30%;
 }
