@@ -1,0 +1,23 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.card {
+    border: 3px solid black;
+    border-radius: 8px;
+
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    text-align: left;
+}
+
+.price {
+    text-align: right;
+}
