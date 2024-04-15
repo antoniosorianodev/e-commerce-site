@@ -43,3 +43,7 @@ button:hover {
 .product-image {
     width: 30%;
 }
+
+nav * {
+    text-decoration: none;
+}
