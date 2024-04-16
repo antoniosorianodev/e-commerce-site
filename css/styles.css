@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
 * {
     padding: 0px;
     margin: 0px;
+    background-color: black;
+    color: white;
+    font-family: "Chakra Petch", sans-serif;
 }
 
 body {
@@ -16,10 +22,8 @@ body {
 .card {
     display: flex;
     flex-direction: column;
-    border: 3px solid black;
+    border: 2px solid white;
     border-radius: 8px;
-    width: 12%;
-    height: 20%;
     background-color: aqua;
 }
 
@@ -36,6 +40,10 @@ body {
     justify-content: space-between;
 }
 
+button {
+    background-color: forestgreen;
+}
+
 button:hover {
     opacity: 0.7;
 }
@@ -46,4 +54,47 @@ button:hover {
 
 nav * {
     text-decoration: none;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    width: 12%;
+    height: 20%;
+    padding: 10px;
+}
+
+nav>ul {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+nav>ul>li {
+    padding: 10px;
+    border-right: solid 1px white;
+}
+
+nav>ul>li:last-child {
+    padding: 10px;
+    border-right: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    border-bottom: 1px solid white;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    width: 3rem;
+}
+
+.logoAndName {
+    display: flex;
+    flex-direction: row;
 }
