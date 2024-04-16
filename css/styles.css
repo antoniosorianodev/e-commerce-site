@@ -98,3 +98,7 @@ header {
     display: flex;
     flex-direction: row;
 }
+
+#placeholder {
+    height: 3rem;
+}
