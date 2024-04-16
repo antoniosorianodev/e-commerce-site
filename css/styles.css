@@ -27,6 +27,12 @@ body {
     background-color: aqua;
 }
 
+#loginMain {
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+}
+
 .info {
     display: flex;
     flex-direction: column;
@@ -99,6 +105,54 @@ header {
     flex-direction: row;
 }
 
-#placeholder {
-    height: 3rem;
+main {
+    padding-top: 3rem;
+}
+
+input {
+    background-color: white;
+    color: black;
+}
+
+.names {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 3%;
+}
+
+.registerCardHolder {
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+.registerCard {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.bankAccounts,
+.expAndCvv {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.creditCard {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+}
+
+form:not(.addToCart) {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+#hero {
+    width: 100%;
 }

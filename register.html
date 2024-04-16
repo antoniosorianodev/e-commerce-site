@@ -26,7 +26,55 @@
         </nav>
     </header>
     <!-- The div below only exists to occupy space, so as to not block actual content with the header -->
-    <div id="placeholder"></div>
+    <main>
+        <div class="registerCardHolder">
+            <form class="card" id="registerCard" action="./login.html">
+                <div class="names">
+                    <p>First Name</p>
+                    <input required></input>
+                    <p>Last Name</p>
+                    <input required></input>
+                </div>
+                <p>Email</p>
+                <input required type="email"></input>
+                <p>Date of Birth</p>
+                <input required type=" number"></input>
+                <div class="creditCard">
+                    <p>Credit Card Number</p>
+                    <input required maxlength="16" type="number"></input>
+                    <div class="expAndCvv">
+                        <p>Expiration Date</p>
+                        <input required maxlength="4" type="number"></input>
+                        <p>CVV</p>
+                        <input required maxlength="3" type="number"></input>
+                    </div>
+                </div>
+                <div class="bankAccounts">
+                    <div class="checkings">
+                        <h4>Checkings</h4>
+                        <p>Routing Number</p>
+                        <input required maxlength="9" type="number"></input>
+                        <p>Account Number</p>
+                        <input required maxlength="17" type="number"></input>
+                    </div>
+                    <div class="savings">
+                        <h4>Savings</h4>
+                        <p>Routing Number</p>
+                        <input required maxlength="9" type="number"></input>
+                        <p>Account Number</p>
+                        <input required maxlength="17" type="number"></input>
+                    </div>
+                </div>
+                <p>Social Security Number</p>
+                <input required maxlength=" 10" type="number"></input>
+                <p>Create a Password</p>
+                <input required type="password"></input>
+                <p>Confirm Password</p>
+                <input required type="password"></input>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </main>
 </body>
 
 </html>
