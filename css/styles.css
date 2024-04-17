@@ -166,3 +166,11 @@ form:not(.addToCart) {
     flex-direction: column;
     align-items: start;
 }
+
+table,
+th,
+td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    text-align: center;
+}
