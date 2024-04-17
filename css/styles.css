@@ -174,3 +174,8 @@ td {
     border-collapse: collapse;
     text-align: center;
 }
+
+#checkout {
+    display: flex;
+    flex-direction: space-between;
+}

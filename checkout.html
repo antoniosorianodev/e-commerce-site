@@ -26,7 +26,7 @@
         </nav>
     </header>
     <!-- The div below only exists to occupy space, so as to not block actual content with the header -->
-    <main>
+    <main id="checkout">
         <table>
             <th>
                 <tr>
@@ -79,6 +79,27 @@
                 <td span="2">800000G</td>
             </tr>
         </table>
+        <form class="card" id="checkoutCard" action="./index.html">
+            <div class="names">
+                <p>First Name</p>
+                <input required></input>
+                <p>Last Name</p>
+                <input required></input>
+            </div>
+            <p>Email</p>
+            <input required type="email"></input>
+            <div class="creditCard">
+                <p>Credit Card Number</p>
+                <input required maxlength="16" type="number"></input>
+                <div class="expAndCvv">
+                    <p>Expiration Date</p>
+                    <input required maxlength="4" type="number"></input>
+                    <p>CVV</p>
+                    <input required maxlength="3" type="number"></input>
+                </div>
+            </div>
+            <button type="submit">Pay</button>
+        </form>
     </main>
 </body>
 
