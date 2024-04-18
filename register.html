@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="logoAndName">
-            <img class="logo" src="./images/logo.png">
+            <img class="logo" src="./images/logo.png" alt="Treasure Trove logo">
             <h1>Treasure Trove</h1>
         </div>
         <nav>
@@ -21,68 +21,69 @@
                 <li><a href="./products.html">Shop</a></li>
                 <li><a href="./checkout.html">Cart</a></li>
                 <li><a href="./login.html">Login</a></li>
-                <li><a href="./register.html">Register</a></li>
+                <li><a href="./register.html"><b>Register</b></a></li>
                 <!-- I'm thinking, a drop down menu w/ register button on left and sign-in button on right -->
+            </ul>
         </nav>
     </header>
     <!-- The div below only exists to occupy space, so as to not block actual content with the header -->
-    <main>
+    <main id="registerMain">
         <div class="registerCardHolder">
             <form class="card" id="registerCard" action="./login.html">
                 <div class="names">
-                    <p>First Name</p>
-                    <input required></input>
-                    <p>Last Name</p>
-                    <input required></input>
+                    <label>First Name</label>
+                    <input required>
+                    <label>Last Name</label>
+                    <input required>
                 </div>
-                <p>Email</p>
-                <input required type="email"></input>
-                <p>Date of Birth</p>
-                <input required type=" number"></input>
+                <label>Email</label>
+                <input required type="email">
+                <label>Date of Birth</label>
+                <input required type="date">
                 <div class="creditCard">
-                    <p>Credit Card Number</p>
-                    <input required maxlength="16" type="number"></input>
+                    <label>Credit Card Number</label>
+                    <input required type="number">
                     <div class="expAndCvv">
-                        <p>Expiration Date</p>
-                        <input required maxlength="4" type="number"></input>
-                        <p>CVV</p>
-                        <input required maxlength="3" type="number"></input>
+                        <label>Expiration Date</label>
+                        <input required type="date">
+                        <label>CVV</label>
+                        <input required type="number">
                     </div>
                 </div>
                 <div class="bankAccounts">
-                    <div class="checkings">
+                    <div id="checkings">
                         <h4>Checkings</h4>
-                        <p>Routing Number</p>
-                        <input required maxlength="9" type="number"></input>
-                        <p>Account Number</p>
-                        <input required maxlength="17" type="number"></input>
+                        <label>Routing Number</label>
+                        <input required type="number">
+                        <label>Account Number</label>
+                        <input required type="number">
                     </div>
-                    <div class="savings">
+                    <div id="savings">
                         <h4>Savings</h4>
-                        <p>Routing Number</p>
-                        <input required maxlength="9" type="number"></input>
-                        <p>Account Number</p>
-                        <input required maxlength="17" type="number"></input>
+                        <label>Routing Number</label>
+                        <input required type="number">
+                        <label>Account Number</label>
+                        <input required type="number">
                     </div>
                 </div>
-                <p>Social Security Number</p>
-                <input required maxlength=" 10" type="number"></input>
-                <p>Create a Password</p>
-                <input required type="password"></input>
-                <p>Confirm Password</p>
-                <input required type="password"></input>
+                <label>Social Security Number</label>
+                <input required type="number">
+                <label>Create a Password</label>
+                <input required type="password">
+                <label>Confirm Password</label>
+                <input required type="password">
                 <div class="hearAboutUs">
                     <h4>How did you hear about us?</h4>
-                    <div><input type="radio" name="thereCanOnlyBeOne">Company/Work</input>
+                    <div><input type="radio" name="thereCanOnlyBeOne">Company/Work
                     </div>
-                    <div><input type="radio" name="thereCanOnlyBeOne">A friend</input>
+                    <div><input type="radio" name="thereCanOnlyBeOne">A friend
                     </div>
                     <div>
-                        <input type="radio" name="thereCanOnlyBeOne">Third thing</input>
+                        <input type="radio" name="thereCanOnlyBeOne">Third thing
                     </div>
                     <div>
                         <input type="radio" name="thereCanOnlyBeOne">That cool piece of paper you left on my
-                        windshield that I <i>absolutely</i> consented to being there</input>
+                        windshield that I <i>absolutely</i> consented to being there
                     </div>
                 </div>
                 <button type="submit">Register</button>

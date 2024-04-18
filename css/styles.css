@@ -17,6 +17,7 @@ body {
 .productSpread {
     display: flex;
     flex-flow: row wrap;
+    width: 100%;
 }
 
 .card {
@@ -24,7 +25,11 @@ body {
     flex-direction: column;
     border: 2px solid white;
     border-radius: 8px;
-    background-color: aqua;
+    padding-right: 10px;
+}
+
+.card:last-child {
+    padding: 0px;
 }
 
 #loginMain {
@@ -64,7 +69,7 @@ nav * {
 
 .cardContainer {
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     width: 12%;
     height: 20%;
     padding: 10px;
@@ -109,8 +114,20 @@ h4 {
     flex-direction: row;
 }
 
+main:not(#indexMain) {
+    padding-top: 5rem;
+}
+
 main {
+    padding-bottom: 2rem;
+}
+
+#indexMain {
     padding-top: 3rem;
+}
+
+#productMain {
+    display: flex;
 }
 
 input {
@@ -175,7 +192,38 @@ td {
     text-align: center;
 }
 
-#checkout {
-    display: flex;
-    flex-direction: space-between;
+table {
+    width: 40%;
 }
+
+#checkings,
+#savings {
+    display: flex;
+    flex-direction: column;
+}
+
+#checkoutMain {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* 320px is "Mobile S" */
+@media screen and (max-width: 850px) {
+    .cardContainer {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .cardContainer {
+        width: 90%;
+    }
+}
+
+/* 375px is "Mobile M" */
+
+/* 425p is "Mobile L" */
+/* 768 is "Tablet" */
+/* 1024 is "Laptop" */
+/* 1440px is "Laptop L" */
+/* 2560 is "4k" */
