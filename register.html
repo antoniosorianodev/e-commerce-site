@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <!-- The line below creates the favicon that occupies the left side of the current tab -->
     <link rel="icon" type="image/x-icon" href="./images/products/treasurebox.webp">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
+    <!-- If ANY changes are made within the header tag, rememeber to make those changes on ALL html pages -->
     <header>
         <div class="logoAndName">
             <img class="logo" src="./images/logo.png" alt="Treasure Trove logo">
@@ -17,18 +19,19 @@
         </div>
         <nav>
             <ul>
+                <!-- Only one of these should be bolded, double-check -->
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./products.html">Shop</a></li>
                 <li><a href="./checkout.html">Cart</a></li>
                 <li><a href="./login.html">Login</a></li>
                 <li><a href="./register.html"><b>Register</b></a></li>
-                <!-- I'm thinking, a drop down menu w/ register button on left and sign-in button on right -->
             </ul>
         </nav>
     </header>
-    <!-- The div below only exists to occupy space, so as to not block actual content with the header -->
     <main id="registerMain">
-        <div class="registerCardHolder">
+        <section id="registerSection">
+            <!-- An h tag of any number needs to be in this article tag for HTML validation -->
+            <h3>Register</h3>
             <form class="card" id="registerCard" action="./login.html">
                 <div class="names">
                     <label>First Name</label>
@@ -36,7 +39,12 @@
                     <label>Last Name</label>
                     <input required>
                 </div>
+                <label>Username</label>
+                <input required>
                 <label>Email</label>
+                <!-- I'll leave this comment here since it's the first instance: -->
+                <!-- inputs of type "number" are NOT compatible with maxlength or minlength attributes -->
+                <!-- so it's either get the right NUMBER of characters, or get the right TYPE of characters -->
                 <input required type="email">
                 <label>Date of Birth</label>
                 <input required type="date">
@@ -74,9 +82,10 @@
                 <input required type="password">
                 <div class="hearAboutUs">
                     <h4>How did you hear about us?</h4>
-                    <div><input type="radio" name="thereCanOnlyBeOne">Company/Work
-                    </div>
+                    <!-- inputs of type radio NEED the same name to avoid the ability of selecting multiple options -->
                     <div><input type="radio" name="thereCanOnlyBeOne">A friend
+                    </div>
+                    <div><input type="radio" name="thereCanOnlyBeOne">Company/Work
                     </div>
                     <div>
                         <input type="radio" name="thereCanOnlyBeOne">Third thing
@@ -86,9 +95,11 @@
                         windshield that I <i>absolutely</i> consented to being there
                     </div>
                 </div>
-                <button type="submit">Register</button>
+                <div class="buttonContainer">
+                    <button type="submit">Register</button>
+                </div>
             </form>
-        </div>
+        </section>
     </main>
 </body>
 

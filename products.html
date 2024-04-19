@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
+    <!-- The line below creates the favicon that occupies the left side of the current tab -->
     <link rel="icon" type="image/x-icon" href="./images/products/treasurebox.webp">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
+    <!-- If ANY changes are made within the header tag, rememeber to make those changes on ALL html pages -->
     <header>
         <div class="logoAndName">
             <img class="logo" src="./images/logo.png" alt="Treasure Trove logo">
@@ -17,860 +19,1392 @@
         </div>
         <nav>
             <ul>
+                <!-- Only one of these should be bolded, double-check -->
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./products.html"><b>Shop</b></a></li>
                 <li><a href="./checkout.html">Cart</a></li>
                 <li><a href="./login.html">Login</a></li>
                 <li><a href="./register.html">Register</a></li>
-                <!-- I'm thinking, a drop down menu w/ register button on left and sign-in button on right -->
             </ul>
         </nav>
     </header>
-    <!-- The div below only exists to occupy space, so as to not block actual content with the header -->
-    <!-- <div id="placeholder"></div> -->
     <main id="productsMain">
-        <div class="productSpread">
+        <section id="productSpread">
+            <!-- An h tag of any number needs to be in this summary tag for HTML validation -->
+            <h3>Products</h3>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/goldmedal.webp" alt="???">
+                        <img class="product-image" src="./images/products/goldmedal.webp"
+                            alt="An image of in-game item 'Gold Medal'">
                         <div class="info">
                             <p class="name">Gold Medal</p>
-                            <p class="price">10000G</p>
+                            <p class="price">$100.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            The Gold Medal is from Kirby's Dream Course.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/goldcoin.webp" alt="???">
+                        <img class="product-image" src="./images/products/goldcoin.webp"
+                            alt="An image of in-game item 'Gold Coin'">
                         <div class="info">
                             <p class="name">Gold Coin</p>
-                            <p class="price">1000G</p>
+                            <p class="price">$10.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            The Gold Coin is specifically a Koban, a Japanese oval gold coin used in the Edo period of
+                            feudal Japan. It is worth one ryo.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/whip.webp" alt="???">
+                        <img class="product-image" src="./images/products/whip.webp"
+                            alt="An image of in-game item 'Whip'">
                         <div class="info">
                             <p class="name">Whip</p>
-                            <p class="price">6800G</p>
+                            <p class="price">$68.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            The Whip is specifically the one used by the titular character from the Indiana Jones media
+                            franchise.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/crystalball.webp" alt="???">
+                        <img class="product-image" src="./images/products/crystalball.webp"
+                            alt="An image of in-game item 'Crystal Ball'">
                         <div class="info">
                             <p class="name">Crystal Ball</p>
-                            <p class="price">200000G</p>
+                            <p class="price">$2,000.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            Crystal Balls are common items used by fortune tellers. The Crystal Ball closely resembles
+                            the
+                            one in the Famicom version of Ys I: Ancient Ys Vanished.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/luckycat.webp" alt="???">
+                        <img class="product-image" src="./images/products/luckycat.webp"
+                            alt="An image of in-game item 'Lucky Cat'">
                         <div class="info">
                             <p class="name">Lucky Cat</p>
-                            <p class="price">500G</p>
+                            <p class="price">$5.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            The Lucky Cat is a common Japanese figurine believed to give good luck, the maneki-neko.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/seiryusword.webp" alt="???">
+                        <img class="product-image" src="./images/products/seiryusword.webp"
+                            alt="An image of in-game item 'Seiryu Sword'">
                         <div class="info">
                             <p class="name">Seiryu Sword</p>
-                            <p class="price">142000G</p>
+                            <p class="price">$1,420.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            A sword named after Seiryu, the Azure Dragon from Chinese folklore who is the Dragon God of
+                            the
+                            east and of the essence of spring.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/screwattack.webp" alt="???">
+                        <img class="product-image" src="./images/products/screwattack.webp"
+                            alt="An image of in-game item 'Screw Attack'">
                         <div class="info">
                             <p class="name">Screw Attack</p>
-                            <p class="price">80000G</p>
+                            <p class="price">$800.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            The Screw Attack is a power-up item in the Metroid series that allows Samus to perform a
+                            powerful jumping attack.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/echigocandy.webp" alt="???">
+                        <img class="product-image" src="./images/products/echigocandy.webp"
+                            alt="An image of in-game item 'Echigo Candy'">
                         <div class="info">
                             <p class="name">Echigo Candy</p>
-                            <p class="price">8000G</p>
+                            <p class="price">$80.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            "Echigoya" refers to stock character in Japanese period dramas whose role is a nefarious
+                            businessman; this name derives from the Echigo Province, a place in old Japan currently part
+                            of
+                            the Niigata Prefecture.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/phantomask.webp" alt="???">
+                        <img class="product-image" src="./images/products/phantomask.webp"
+                            alt="An image of in-game item 'Phanto Mask'">
                         <div class="info">
                             <p class="name">Phanto Mask</p>
-                            <p class="price">278000G</p>
+                            <p class="price">$2,780.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            The Phanto Mask resembles the Phanto enemy from Super Mario Bros. 2, which is likely a
+                            reference
+                            to Phantom of the Opera. In Japanese, the mask is simply named after its black and white
+                            colors.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/starstone.webp" alt="???">
+                        <img class="product-image" src="./images/products/starstone.webp"
+                            alt="An image of in-game item 'Star Stone'">
                         <div class="info">
                             <p class="name">Star Stone</p>
-                            <p class="price">82100G</p>
+                            <p class="price">$821.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            Appears to be a shooting star.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/beastsfang.webp" alt="???">
+                        <img class="product-image" src="./images/products/beastsfang.webp"
+                            alt="An image of in-game item 'Beast's Fan'">
                         <div class="info">
                             <p class="name">Beast's Fang</p>
-                            <p class="price">7300G</p>
+                            <p class="price">$73.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            I am missing a description, that stinks :L
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/bandanna.webp" alt="???">
+                        <img class="product-image" src="./images/products/bandanna.webp"
+                            alt="An image of in-game item 'Bandanna'">
                         <div class="info">
                             <p class="name">Bandanna</p>
-                            <p class="price">1990G</p>
+                            <p class="price">$19.90</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            The Bandanna resembles the one Kirby wears when he gains the Fighter ability. It may also be
+                            a
+                            possible reference to the Rambo film series.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/seasonsheart.webp" alt="???">
+                        <img class="product-image" src="./images/products/seasonsheart.webp"
+                            alt="An image of in-game item 'Seasons Heart'">
                         <div class="info">
                             <p class="name">Seasons Heart</p>
-                            <p class="price">250000G</p>
+                            <p class="price">$2,500.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            Seasons Heart is a combination of the Springtime, Summertime, Autumntime, and Wintertime
+                            Treasures from Kirby Super Star. It replaces Springtime.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/dime.webp" alt="???">
+                        <img class="product-image" src="./images/products/dime.webp"
+                            alt="An image of in-game item 'Dime'">
                         <div class="info">
                             <p class="name">Dime</p>
-                            <p class="price">10G</p>
+                            <p class="price">$0.10</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            This treasure serves as the first instance where the in-game value, Gold (G), can be equated
+                            to
+                            real-world value. This would mean 1 Gold is equal to 1 cent (United States) or 1 Yen
+                            (Japan); at
+                            the time of Kirby Super Star's release, 1 cent and 1 Yen were nearly equivalent in exchange
+                            rate. A real-world 10 Yen Coin feature the number 10 on its reverse side, much like how it
+                            features a 10 in game.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/glassslipper.webp" alt="???">
+                        <img class="product-image" src="./images/products/glassslipper.webp"
+                            alt="An image of in-game item 'Glass Slipper'">
                         <div class="info">
                             <p class="name">Glass Slipper</p>
-                            <p class="price">120000G</p>
+                            <p class="price">$1,200.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            The Glass Slipper is likely the one specifically lost by Cinderella.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/goblet.webp" alt="???">
+                        <img class="product-image" src="./images/products/goblet.webp"
+                            alt="An image of in-game item 'Goblet'">
                         <div class="info">
                             <p class="name">Goblet</p>
-                            <p class="price">800G</p>
+                            <p class="price">$8.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            I am missing a description, that stinks :L
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/saucepan.webp" alt="???">
+                        <img class="product-image" src="./images/products/saucepan.webp"
+                            alt="An image of in-game item 'Saucepan'">
                         <div class="info">
                             <p class="name">Saucepan</p>
-                            <p class="price">10G</p>
+                            <p class="price">$0.10</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            I am missing a description, that stinks :L
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/brassknuckle.webp" alt="???">
+                        <img class="product-image" src="./images/products/brassknuckle.webp"
+                            alt="An image of in-game item 'Brass Knuckle'">
                         <div class="info">
                             <p class="name">Brass Kunckle</p>
-                            <p class="price">20000G</p>
+                            <p class="price">$200.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            Its Japanese name, "Bomber Knuckle," may be a reference to the intended method of obtaining
+                            the
+                            treasure, by inhaling the Bomber enemy to obtain Crash to press the switch to open the
+                            shutter.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/amberrose.webp" alt="???">
+                        <img class="product-image" src="./images/products/amberrose.webp"
+                            alt="An image of in-game item 'Amber Rose'">
                         <div class="info">
                             <p class="name">Amber Rose</p>
-                            <p class="price">22100G</p>
+                            <p class="price">$221.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            I am missing a description, that stinks :L
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/fishfossil.webp" alt="???">
+                        <img class="product-image" src="./images/products/fishfossil.webp"
+                            alt="An image of in-game item 'Fish Fossil'">
                         <div class="info">
                             <p class="name">Fish Fossil</p>
-                            <p class="price">8250G</p>
+                            <p class="price">$82.50</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            I am missing a description, that stinks :L
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/beastfossil.webp" alt="???">
+                        <img class="product-image" src="./images/products/beastfossil.webp"
+                            alt="An image of in-game item 'Beast Fossil'">
                         <div class="info">
                             <p class="name">Beast Fossil</p>
-                            <p class="price">24220G</p>
+                            <p class="price">$242.20</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            I am missing a description, that stinks :L
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/machineparts.webp" alt="???">
+                        <img class="product-image" src="./images/products/machineparts.webp"
+                            alt="An image of in-game item 'Machine Parts'">
                         <div class="info">
                             <p class="name">Machine Parts</p>
-                            <p class="price">121300G</p>
+                            <p class="price">$1,213.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            The Machine Parts are Hydra Parts Y and Z in Kirby Air Ride. It replaces the Nunchuks from
+                            Kirby
+                            Super Star.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/bucket.webp" alt="???">
+                        <img class="product-image" src="./images/products/bucket.webp"
+                            alt="An image of in-game item 'Bucket'">
                         <div class="info">
                             <p class="name">Bucket</p>
-                            <p class="price">200G</p>
+                            <p class="price">$2.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            The Bucket is from Mario & Wario; Wario throws it on top of Mario's (& Co's) head(s) to
+                            obstruct
+                            his/their vision. Oddly, the letter in front is colored orange instead of purple.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/powerpaintbrush.webp" alt="???">
+                        <img class="product-image" src="./images/products/powerpaintbrush.webp"
+                            alt="An image of in-game item 'Power Paintbrush'">
                         <div class="info">
                             <p class="name">Power Paintbrush</p>
-                            <p class="price">222000G</p>
+                            <p class="price">$2,220.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            The Power Paintbrush refers to the Magical Paintbrush from Kirby: Canvas Curse; "Power
+                            Paintbrush" is its name in PAL regions. It replaces Summertime from Kirby Super Star.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/100dollarcoin.webp" alt="???">
+                        <img class="product-image" src="./images/products/100dollarcoin.webp"
+                            alt="An image of in-game item '100-Dollar-Coin'">
                         <div class="info">
                             <p class="name">100-Dollar Coin</p>
-                            <p class="price">10000G</p>
+                            <p class="price">$100.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            Similarly to the Dime, this treasure serves as an instance where the in-game value can be
+                            equated to real-world value.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/ancientgem.webp" alt="???">
+                        <img class="product-image" src="./images/products/ancientgem.webp"
+                            alt="An image of in-game item 'Ancient Gem'">
                         <div class="info">
                             <p class="name">Ancient Gem</p>
-                            <p class="price">68000G</p>
+                            <p class="price">$680.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            The Ancient Gem is based on a type of Japanese comma-shaped bead, the magatama.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/falconhelmet.webp" alt="???">
+                        <img class="product-image" src="./images/products/falconhelmet.webp"
+                            alt="An image of in-game item 'Falcon Helmet'">
                         <div class="info">
                             <p class="name">Falcon Helmet</p>
-                            <p class="price">41000G</p>
+                            <p class="price">$410.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            The Falcon Helmet is the helmet worn by Captain Falcon, the main character of the F-Zero
+                            series.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/cellphone.webp" alt="???">
+                        <img class="product-image" src="./images/products/cellphone.webp"
+                            alt="An image of in-game item 'Cell Phone'">
                         <div class="info">
                             <p class="name">Cell Phone</p>
-                            <p class="price">40210G</p>
+                            <p class="price">$402.10</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            Kirby's Cell Phone from Kirby & The Amazing Mirror. It replaces the Dud from Kirby Super
+                            Star.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/truthmirror.webp" alt="???">
+                        <img class="product-image" src="./images/products/truthmirror.webp"
+                            alt="An image of in-game item 'Truth Mirror'">
                         <div class="info">
                             <p class="name">Truth Mirror</p>
-                            <p class="price">500000G</p>
+                            <p class="price">$5,000.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            I am missing a description, that stinks :L
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/startiara.webp" alt="???">
+                        <img class="product-image" src="./images/products/startiara.webp"
+                            alt="An image of in-game item 'Star Tiara'">
                         <div class="info">
                             <p class="name">Star Tiara</p>
-                            <p class="price">408200G</p>
+                            <p class="price">$4,082.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            I am missing a description, that stinks :L
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/koopashell.webp" alt="???">
+                        <img class="product-image" src="./images/products/koopashell.webp"
+                            alt="An image of in-game item 'Koopa Shell'">
                         <div class="info">
                             <p class="name">Koopa Shell</p>
-                            <p class="price">800G</p>
+                            <p class="price">$8.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            The Koopa Shell is one used by a green Koopa Troopa from the Mario series.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/falchion.webp" alt="???">
+                        <img class="product-image" src="./images/products/falchion.webp"
+                            alt="An image of in-game item 'Falchion'">
                         <div class="info">
                             <p class="name">Falchion</p>
-                            <p class="price">325000G</p>
+                            <p class="price">$3,250.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            The Sword is likely Marth's Falchion from the Fire Emblem series. A falchion is also a type
+                            of
+                            one-handed, single-edged sword of European origin.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/warriorshield.webp" alt="???">
+                        <img class="product-image" src="./images/products/warriorshield.webp"
+                            alt="An image of in-game item 'Warrior Shield'">
                         <div class="info">
                             <p class="name">Warrior Shield</p>
-                            <p class="price">50000G</p>
+                            <p class="price">$500.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            The Hero Shield used by Sword Hero in Team Kirby Clash, and when wearing the Swordsman's
+                            Helm in
+                            subsequent entries, bears resemblance to the Warrior Shield.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/unicornshorn.webp" alt="???">
+                        <img class="product-image" src="./images/products/unicornshorn.webp"
+                            alt="An image of in-game item 'Unicorn's Horn'">
                         <div class="info">
                             <p class="name">Unicorn's Horn</p>
-                            <p class="price">80300G</p>
+                            <p class="price">$803.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            I am missing a description, that stinks :L
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/threestarcane.webp" alt="???">
+                        <img class="product-image" src="./images/products/threestarcane.webp"
+                            alt="An image of in-game item 'Three-Star Cane'">
                         <div class="info">
                             <p class="name">Three-Star Cane</p>
-                            <p class="price">222000G</p>
+                            <p class="price">$2,220.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            The Three-Star Cane refers to the Triple Star from Kirby: Squeak Squad. It replaces
+                            Autumntime
+                            from Kirby Super Star.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/brokenbowl.webp" alt="???">
+                        <img class="product-image" src="./images/products/brokenbowl.webp"
+                            alt="An image of in-game item 'Broken Bowl'">
                         <div class="info">
                             <p class="name">Broken Bowl</p>
-                            <p class="price">50G</p>
+                            <p class="price">$0.50</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            I am missing a description, that stinks :L
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/tutsmask.webp" alt="???">
+                        <img class="product-image" src="./images/products/tutsmask.webp"
+                            alt="An image of in-game item 'Tut's Mask'">
                         <div class="info">
                             <p class="name">Tut's Mask</p>
-                            <p class="price">160000G</p>
+                            <p class="price">$1,600.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            Tut's Mask is the golden funerary mask of Tutankhamun, an ancient Egyptian pharaoh.
+                            Tutankham is
+                            also the name of an arcade game developed by Konami that's named after King Tut.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/mrsaturn.webp" alt="???">
+                        <img class="product-image" src="./images/products/mrsaturn.webp"
+                            alt="An image of in-game item 'Mr. Saturn'">
                         <div class="info">
                             <p class="name">Mr. Saturn</p>
-                            <p class="price">120000G</p>
+                            <p class="price">$1,200.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            Mr. Saturn is from the EarthBound series.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/armor.webp" alt="???">
+                        <img class="product-image" src="./images/products/armor.webp"
+                            alt="An image of in-game item 'Armor'">
                         <div class="info">
                             <p class="name">Armor</p>
-                            <p class="price">212000G</p>
+                            <p class="price">$2,120.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            The Armor is made from mithril (also spelled mythril), a fictional metal originating from
+                            Tolkien's mythos that appears in various fantasy works.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/treasurebox.webp" alt="???">
+                        <img class="product-image" src="./images/products/treasurebox.webp"
+                            alt="An image of in-game item 'Treasure Box'">
                         <div class="info">
                             <p class="name">Treasure Box</p>
-                            <p class="price">100000G</p>
+                            <p class="price">$1,000.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            A 1000 ryo box was used to transport Tokugawa coinage in feudal-era Japan, and was designed
+                            to
+                            hold an amount of Koban totaling 1000 ryo. As the Koban (Gold Coin) is worth 1000G, this box
+                            is
+                            only worth 1/10 of what it should be.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/mannequin.webp" alt="???">
+                        <img class="product-image" src="./images/products/mannequin.webp"
+                            alt="An image of in-game item 'Mannequin'">
                         <div class="info">
                             <p class="name">Mannequin</p>
-                            <p class="price">3000G</p>
+                            <p class="price">$30.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            I am missing a description, that stinks :L
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/goldcrown.webp" alt="???">
+                        <img class="product-image" src="./images/products/goldcrown.webp"
+                            alt="An image of in-game item 'Gold Crown'">
                         <div class="info">
                             <p class="name">Gold Crown</p>
-                            <p class="price">528000G</p>
+                            <p class="price">$5,280.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            I am missing a description, that stinks :L
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/kingscape.webp" alt="???">
+                        <img class="product-image" src="./images/products/kingscape.webp"
+                            alt="An image of in-game item 'King's Cape'">
                         <div class="info">
                             <p class="name">King's Cape</p>
-                            <p class="price">508000G</p>
+                            <p class="price">$5,080.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            Somewhat resembles King Dedede's robe.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/modelship.webp" alt="???">
+                        <img class="product-image" src="./images/products/modelship.webp"
+                            alt="An image of in-game item 'Model Ship'">
                         <div class="info">
                             <p class="name">Model Ship</p>
-                            <p class="price">800000G</p>
+                            <p class="price">$8,000.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            I am missing a description, that stinks :L
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/sunring.webp" alt="???">
+                        <img class="product-image" src="./images/products/sunring.webp"
+                            alt="An image of in-game item 'Sun Ring'">
                         <div class="info">
                             <p class="name">Sun Ring</p>
-                            <p class="price">800000G</p>
+                            <p class="price">$8,000.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            I am missing a description, that stinks :L
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/goldwateringcan.webp" alt="???">
+                        <img class="product-image" src="./images/products/goldwateringcan.webp"
+                            alt="An image of in-game item 'Gold Watering Can'">
                         <div class="info">
                             <p class="name">Gold Watering Can</p>
-                            <p class="price">200000G</p>
+                            <p class="price">$2,000.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            The Gold Watering Can is an item in the Animal Crossing series. It replaces Wintertime from
+                            Kirby Super Star.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/katana.webp" alt="???">
+                        <img class="product-image" src="./images/products/katana.webp"
+                            alt="An image of in-game item 'Katana'">
                         <div class="info">
                             <p class="name">Katana</p>
-                            <p class="price">990000G</p>
+                            <p class="price">$9,900.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            The most valuable of all 60 Treasures.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/charm.webp" alt="???">
+                        <img class="product-image" src="./images/products/charm.webp"
+                            alt="An image of in-game item 'Charm'">
                         <div class="info">
                             <p class="name">Charm</p>
-                            <p class="price">8000G</p>
+                            <p class="price">$80.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            The charm on the necklace appears to be a cross or Ankh.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/xmastree.webp" alt="???">
+                        <img class="product-image" src="./images/products/xmastree.webp"
+                            alt="An image of in-game item 'Xmas Tree'">
                         <div class="info">
                             <p class="name">Xmas Tree</p>
-                            <p class="price">40000G</p>
+                            <p class="price">$400.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            I am missing a description, that stinks :L
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/kongsbarrel.webp" alt="???">
+                        <img class="product-image" src="./images/products/kongsbarrel.webp"
+                            alt="An image of in-game item 'Kong's Barrel'">
                         <div class="info">
                             <p class="name">Kong's Barrel</p>
-                            <p class="price">1500G</p>
+                            <p class="price">$15.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            A DK Barrel from the Donkey Kong Country series.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/ramiasscale.webp" alt="???">
+                        <img class="product-image" src="./images/products/ramiasscale.webp"
+                            alt="An image of in-game item 'Ramia's Scale'">
                         <div class="info">
                             <p class="name">Ramia's Scale</p>
-                            <p class="price">12800G</p>
+                            <p class="price">$128.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            The scale of a mythical creature, Lamia. Final Fantasy III features a Lamia Scale item, but
+                            its
+                            relation is unknown.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/shinybamboo.webp" alt="???">
+                        <img class="product-image" src="./images/products/shinybamboo.webp"
+                            alt="An image of in-game item 'Shiny Bamboo'">
                         <div class="info">
                             <p class="name">Shiny Bamboo</p>
-                            <p class="price">600000G</p>
+                            <p class="price">$6,000.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            The Shiny Bamboo is a reference to The Tale of the Bamboo Cutter, a folk tale well-known by
+                            Japanese children. In the story, the baby Princess Kaguya is discovered inside a glowing
+                            bamboo
+                            stalk.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/tire.webp" alt="???">
+                        <img class="product-image" src="./images/products/tire.webp"
+                            alt="An image of in-game item 'Tire'">
                         <div class="info">
                             <p class="name">Tire</p>
-                            <p class="price">1100G</p>
+                            <p class="price">$11.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            The Tire is likely a reference to Super Mario Kart.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/spiritcharm.webp" alt="???">
+                        <img class="product-image" src="./images/products/spiritcharm.webp"
+                            alt="An image of in-game item 'Spirit Charm'">
                         <div class="info">
                             <p class="name">Spirit Charm</p>
-                            <p class="price">78500G</p>
+                            <p class="price">$785.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            I am missing a description, that stinks :L
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/pegasuswing.webp" alt="???">
+                        <img class="product-image" src="./images/products/pegasuswing.webp"
+                            alt="An image of in-game item 'Pegasus Wing'">
                         <div class="info">
                             <p class="name">Pegasus Wing</p>
-                            <p class="price">42800G</p>
+                            <p class="price">$428.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            I am missing a description, that stinks :L
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/raccoondoll.webp" alt="???">
+                        <img class="product-image" src="./images/products/raccoondoll.webp"
+                            alt="An image of in-game item 'Raccoon Doll'">
                         <div class="info">
                             <p class="name">Raccoon Doll</p>
-                            <p class="price">8150G</p>
+                            <p class="price">$81.50</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            I am missing a description, that stinks :L
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/shellwhistle.webp" alt="???">
+                        <img class="product-image" src="./images/products/shellwhistle.webp"
+                            alt="An image of in-game item 'Shell Whistle'">
                         <div class="info">
                             <p class="name">Shell Whistle</p>
-                            <p class="price">82000G</p>
+                            <p class="price">$820.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            I am missing a description, that stinks :L
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/orichalcum.webp" alt="???">
+                        <img class="product-image" src="./images/products/orichalcum.webp"
+                            alt="An image of in-game item 'Orichalcum'">
                         <div class="info">
                             <p class="name">Orichalcum</p>
-                            <p class="price">512000G</p>
+                            <p class="price">$5,120.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            Orihalcon is a mythical metal of Atlantis that is quite valuable in most RPGs.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/platinumring.webp" alt="???">
+                        <img class="product-image" src="./images/products/platinumring.webp"
+                            alt="An image of in-game item 'Platinum Ring'">
                         <div class="info">
                             <p class="name">Platinum Ring</p>
-                            <p class="price">40000G</p>
+                            <p class="price">$400.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            I am missing a description, that stinks :L
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
             <div class="cardContainer">
                 <div class="card">
                     <div class="imageAndInfo">
-                        <img class="product-image" src="./images/products/triforce.webp" alt="???">
+                        <img class="product-image" src="./images/products/triforce.webp"
+                            alt="An image of in-game item 'Triforce'">
                         <div class="info">
                             <p class="name">Triforce</p>
-                            <p class="price">800000G</p>
+                            <p class="price">$8000.00</p>
                         </div>
                     </div>
+                    <details>
+                        <summary>
+                            The Triforce is from The Legend of Zelda series.
+                        </summary>
+                    </details>
                     <form class="addToCart" action="./checkout.html">
-                        <button type="submit">Add to Cart</button>
+                        <div class="buttonContainer">
+                            <button type="submit">Add to Cart</button>
+                        </div>
                     </form>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 </body>
 

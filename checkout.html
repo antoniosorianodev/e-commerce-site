@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
+    <!-- The line below creates the favicon that occupies the left side of the current tab -->
     <link rel="icon" type="image/x-icon" href="./images/products/treasurebox.webp">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
+    <!-- If ANY changes are made within the header tag, rememeber to make those changes on ALL html pages -->
     <header>
         <div class="logoAndName">
             <img class="logo" src="./images/logo.png" alt="Treasure Trove logo">
@@ -17,91 +19,116 @@
         </div>
         <nav>
             <ul>
+                <!-- Only one of these should be bolded, double-check -->
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./products.html">Shop</a></li>
                 <li><a href="./checkout.html"><b>Cart</b></a></li>
                 <li><a href="./login.html">Login</a></li>
                 <li><a href="./register.html">Register</a></li>
-                <!-- I'm thinking, a drop down menu w/ register button on left and sign-in button on right -->
             </ul>
         </nav>
     </header>
-    <!-- The div below only exists to occupy space, so as to not block actual content with the header -->
     <main id="checkoutMain">
-        <table>
-            <tbody>
-                <tr>
-                    <th>Image</th>
-                    <th>Product</th>
-                    <th>Quantity</th>
-                    <th>Price</th>
-                </tr>
-                <tr>
-                    <td><img src="./images/products/screwattack.webp" alt="???"></td>
-                    <td>Screw Attack</td>
-                    <td>x1</td>
-                    <td>80000G</td>
-                </tr>
-                <tr>
-                    <td><img src="./images/products/falconhelmet.webp" alt="???"></td>
-                    <td>Falcon Helmet</td>
-                    <td>x1</td>
-                    <td>41000G</td>
-                </tr>
-                <tr>
-                    <td><img src="./images/products/mrsaturn.webp" alt="???"></td>
-                    <td>Mr. Saturn</td>
-                    <td>x99</td>
-                    <td>11880000G</td>
-                </tr>
-                <tr>
-                    <td><img src="./images/products/falchion.webp" alt="???"></td>
-                    <td>Falchion</td>
-                    <td>x1</td>
-                    <td>325000G</td>
-                </tr>
-                <tr>
-                    <td><img src="./images/products/xmastree.webp" alt="???"></td>
-                    <td>Xmas Tree</td>
-                    <td>x1</td>
-                    <td>40000G</td>
-                </tr>
-                <tr>
-                    <td><img src="./images/products/kongsbarrel.webp" alt="???"></td>
-                    <td>Kong Barrel</td>
-                    <td>x1</td>
-                    <td>24000G</td>
-                </tr>
-                <tr>
-                    <td><img src="./images/products/triforce.webp" alt="???"></td>
-                    <td>Triforce</td>
-                    <td>x1</td>
-                    <td>800000G</td>
-                </tr>
-            </tbody>
-        </table>
-        <form class="card" id="checkoutCard" action="./index.html">
-            <div class="names">
-                <label>First Name</label>
-                <input required>
-                <label>Last Name</label>
-                <input required>
-            </div>
-            <label>Email</label>
-            <input required type="email">
-            <div class="creditCard">
-                <label>Credit Card Number</label>
-                <!-- Alright, I know these aren't telephone #'s BUT, type="number" doesn't have a maxlength attribute  -->
-                <input required type="number">
-                <div class="expAndCvv">
-                    <label>Expiration Date</label>
-                    <input required type="date">
-                    <label>CVV</label>
-                    <input required type="num">
+        <section>
+            <!-- An h tag of any number needs to be in this article tag for HTML validation -->
+            <h3>Cart</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Image</th>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/products/screwattack.webp" alt="An image of in-game item 'Screw Attack'">
+                        </td>
+                        <td>Screw Attack</td>
+                        <td>x1</td>
+                        <td>$800.00</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/products/falconhelmet.webp"
+                                alt="An image of in-game item 'Falcon Helmet'"></td>
+                        <td>Falcon Helmet</td>
+                        <td>x1</td>
+                        <td>$410.00</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/products/mrsaturn.webp" alt="An image of in-game item 'Mr. Saturn'"></td>
+                        <td>Mr. Saturn</td>
+                        <td>x99</td>
+                        <td>$118,800.00</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/products/falchion.webp" alt="An image of in-game item 'Falchion'"></td>
+                        <td>Falchion</td>
+                        <td>x1</td>
+                        <td>$3,250.00</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/products/xmastree.webp" alt="An image of in-game item 'Xmas Tree'"></td>
+                        <td>Xmas Tree</td>
+                        <td>x1</td>
+                        <td>$400.00</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/products/kongsbarrel.webp"
+                                alt="An image of in-game item 'Kong's Barrel'"></td>
+                        <td>Kong Barrel</td>
+                        <td>x1</td>
+                        <td>$240.00</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/products/triforce.webp" alt="An image of in-game item 'Triforce'"></td>
+                        <td>Triforce</td>
+                        <td>x1</td>
+                        <td>$8,000.00</td>
+                    </tr>
+                    <tr>
+                        <th id="total">Total:</th>
+                        <!-- colspan lets one td tag take up the horizontal space of n number of columns -->
+                        <td colspan="3">$131,900.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="paymentSection">
+            <!-- An h tag of any number needs to be in this article tag for HTML validation -->
+            <h3>Payment</h3>
+            <form class="card" id="checkoutCard" action="./index.html">
+                <div class="names">
+                    <label>First Name</label>
+                    <input required>
+                    <label>Last Name</label>
+                    <input required>
                 </div>
-            </div>
-            <button type="submit">Pay</button>
-        </form>
+                <label>Email</label>
+                <input required type="email">
+                <label>Credit or Debit?</label>
+
+                <select name="Credit or Debit?">
+                    <option value="credit">Credit</option>
+                    <option value="debit">Debit</option>
+                </select>
+                <div class="creditCard">
+                    <!-- I'll leave this comment here since it's the first instance: -->
+                    <!-- inputs of type "number" are NOT compatible with maxlength or minlength attributes -->
+                    <!-- so it's either get the right NUMBER of characters, or get the right TYPE of characters -->
+                    <label>Card Number</label>
+                    <input required type="number">
+                    <div class="expAndCvv">
+                        <label>Expiration Date</label>
+                        <input required type="date">
+                        <label>CVV</label>
+                        <input required type="number">
+                    </div>
+                </div>
+                <div class="buttonContainer">
+                    <button type="submit">Pay</button>
+                </div>
+            </form>
+        </section>
     </main>
 </body>
 
