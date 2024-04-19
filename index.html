@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treasure Trove</title>
+    <!-- The line below creates the favicon that occupies the left side of the current tab -->
     <link rel="icon" type="image/x-icon" href="./images/products/treasurebox.webp">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
+    <!-- If ANY changes are made within the header tag, rememeber to make those changes on ALL html pages -->
     <header>
         <div class="logoAndName">
             <img class="logo" src="./images/logo.png" alt="Treasure Trove logo">
@@ -17,22 +19,47 @@
         </div>
         <nav>
             <ul>
+                <!-- Only one of these should be bolded, double-check -->
                 <li><a href="./index.html"><b>Home</b></a></li>
                 <li><a href="./products.html">Shop</a></li>
                 <li><a href="./checkout.html">Cart</a></li>
                 <li><a href="./login.html">Login</a></li>
                 <li><a href="./register.html">Register</a></li>
-                <!-- I'm thinking, a drop down menu w/ register button on left and sign-in button on right -->
             </ul>
         </nav>
     </header>
-    <!-- The div below only exists to occupy space, so as to not block actual content with the header -->
     <main id="indexMain">
-        <img src="./images/hero.webp" alt="Promotional image of Kirby" id="hero">
-        <p>Welcome to Treasure Trove! Here we sell in-game items for real world cash. We take all major card networks,
-            and any products purchased are sent via a redemntion code with the associated e-mail at checkout.</p>
-
-        <p>Uhh, no refunds and $1 = 100G.</p>
+        <img id="hero" src="./images/hero.webp" alt="Promotional image of Kirby">
+        <article>
+            <!-- An h tag of any number needs to be in this article tag for HTML validation -->
+            <h2>Welcome!</h2>
+            <p> Welcome to Treasure Trove! Here we sell in-game items for real-world cash. We exclusively take credit
+                cards and any products purchased are sent via a redemption code with the e-mail provided at
+                checkout.</p>
+            <!-- We're repeating "English" instead of lorem beacuse lorem annoyed the "lang" attribute on line 2 when validating-->
+            <p>
+                English english english english english english. English english english english english english.
+                English english
+                english english english english. English english english english english english. English english
+                english english
+                english english. English english english english english english. English english english english
+                english english.
+                English english english english english english. English english english english english english.
+                English english
+                english english english english. English english english english english english. English english
+                english english
+                english english. English english english english english english. English english english english
+                english english.
+                English english english english english english. English english english english english english.
+                English english
+                english english english english. English english english english english english. English english
+                english english
+                english english. English english english english english english. English english english english
+                english english.
+                English english english english english english. English english english english english english.
+                English english
+                english english english english.</p>
+        </article>
     </main>
 </body>
 

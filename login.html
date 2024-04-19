@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <!-- The line below creates the favicon that occupies the left side of the current tab -->
     <link rel="icon" type="image/x-icon" href="./images/products/treasurebox.webp">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
+    <!-- If ANY changes are made within the header tag, rememeber to make those changes on ALL html pages -->
     <header>
         <div class="logoAndName">
             <img class="logo" src="./images/logo.png" alt="Treasure Trove logo">
@@ -17,30 +19,35 @@
         </div>
         <nav>
             <ul>
+                <!-- Only one of these should be bolded, double-check -->
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./products.html">Shop</a></li>
                 <li><a href="./checkout.html">Cart</a></li>
                 <li><a href="./login.html"><b>Login</b></a></li>
                 <li><a href="./register.html">Register</a></li>
-                <!-- I'm thinking, a drop down menu w/ register button on left and sign-in button on right -->
             </ul>
         </nav>
     </header>
-    <!-- The div below only exists to occupy space, so as to not block actual content with the header -->
     <main id="loginMain">
-        <form class="card" action="./index.html">
-            <div class=" nameAndInput">
-                <div class="nameAndInput">
-                    <p>Email:</p>
-                    <input required type="email">
-                </div>
-                <div>
-                    <p>Password:</p>
+        <section id="loginSection">
+            <!-- An h tag of any number needs to be in this article tag for HTML validation -->
+            <h3>Login</h3>
+            <form class="card" action="./index.html">
+                <div class="usernameAndPassword">
+                    <label>Username:</label>
+                    <input required>
+                    <label>Password:</label>
                     <input required type="password">
                 </div>
-            </div>
-            <button type="submit">Login</button>
-        </form>
+                <div>
+                    <input type="checkbox">
+                    <label>Remember Me</label>
+                </div>
+                <div class="buttonContainer">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+        </section>
     </main>
 </body>
 

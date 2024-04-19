@@ -1,12 +1,93 @@
+/* Importing a custom font */
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+/* As an exercise for a later date, a lot of this is just display: flex and then one direction, so it can be put together */
+/* However, I don't really want to read through all 300 lines at the moment */
 
+/* This is default styling for everything unless overridden below */
 * {
+    /* This calls the font we just imported to be used throughout the page */
+    font-family: "Chakra Petch", sans-serif;
     padding: 0px;
     margin: 0px;
     background-color: black;
     color: white;
-    font-family: "Chakra Petch", sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    border-bottom: 1px solid white;
+    align-items: center;
+    /* This keeps the header always on screen at the top of the page, even when scrolling */
+    position: fixed;
+    width: 100%;
+}
+
+section {
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    width: 100%;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section>* {
+    /* gives all CHILDREN of section tags a width of 100% */
+    /* CHILDREN !== DECENDANTS */
+    width: 100%;
+}
+
+summary {
+    font-size: 0.5em;
+}
+
+h3 {
+    padding: 1% 0% 5% 0%;
+    text-decoration: underline;
+}
+
+nav * {
+    text-decoration: none;
+}
+
+h4 {
+    text-decoration: underline;
+}
+
+table,
+th,
+td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 1%;
+}
+
+table {
+    width: 40%;
+}
+
+main {
+    padding-bottom: 2rem;
+    width: 100%;
+}
+
+main:not(#indexMain) {
+    /* We're avoiding this styling on #indexMain because it would add padding that ruins the hero image */
+    padding: 0% 10% 0% 10%;
 }
 
 body {
@@ -14,28 +95,64 @@ body {
     flex-direction: column;
 }
 
-.productSpread {
+button {
+    background-color: forestgreen;
+    width: 90%;
+}
+
+input {
+    background-color: white;
+    color: black;
+}
+
+nav>ul {
     display: flex;
-    flex-flow: row wrap;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+nav>ul>li {
+    padding: 10px;
+    border-right: solid 1px white;
+}
+
+
+.buttonContainer {
+    padding: 3% 0% 2% 0%;
+    display: flex;
+    justify-content: center;
     width: 100%;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    border: 2px solid white;
-    border-radius: 8px;
-    padding-right: 10px;
 }
 
-.card:last-child {
-    padding: 0px;
+#productsMain .card {
+    border: 2px white solid;
+    border-radius: 4px;
 }
 
-#loginMain {
-    padding: 10%;
+#productsMain p:not(.name) {
+    /* No time to look for the conflicting styling right now, but if this ISN'T here, product names spill outside div*/
+    padding: 0%;
+}
+
+.card summary {
+    height: 100px;
+}
+
+.product-image {
+    width: 75px;
+}
+
+.cardContainer {
     display: flex;
-    justify-content: center;
+    flex-flow: column wrap;
+    width: 20%;
+    height: 250px;
+    padding: 10px;
 }
 
 .info {
@@ -51,88 +168,35 @@ body {
     justify-content: space-between;
 }
 
-button {
-    background-color: forestgreen;
+p:not(.name) {
+    padding: 0% 10% 2% 10%;
+    text-indent: 2em;
 }
 
 button:hover {
     opacity: 0.7;
 }
 
-.product-image {
-    width: 30%;
-}
-
-nav * {
-    text-decoration: none;
-}
-
-.cardContainer {
-    display: flex;
-    flex-flow: column wrap;
-    width: 12%;
-    height: 20%;
-    padding: 10px;
-}
-
-nav>ul {
-    display: flex;
-    text-decoration: none;
-    list-style-type: none;
-}
-
-nav>ul>li {
-    padding: 10px;
-    border-right: solid 1px white;
-}
 
 nav>ul>li:last-child {
     padding: 10px;
+    /* This just avoid adding a border to the right of the last list item, in our case, the "Register" link */
     border-right: none;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    height: 3rem;
-    border-bottom: 1px solid white;
-    align-items: center;
-    position: fixed;
-    width: 100%;
 }
 
 .logo {
     width: 3rem;
 }
 
-h4 {
-    text-decoration: underline;
-}
-
 .logoAndName {
     display: flex;
     flex-direction: row;
+    /* The line below is a band-aid fix to an issue that I really don't want to find the root of right now */
+    height: 90%;
 }
 
 main:not(#indexMain) {
-    padding-top: 5rem;
-}
-
-main {
-    padding-bottom: 2rem;
-}
-
-#indexMain {
-    padding-top: 3rem;
-}
-
-#productMain {
-    display: flex;
-}
-
-input {
-    background-color: white;
-    color: black;
+    padding: 5rem 5% 5% 5%;
 }
 
 .names {
@@ -142,10 +206,20 @@ input {
     padding-bottom: 3%;
 }
 
+.hearAboutUs {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.usernameAndPassword {
+    display: flex;
+    flex-direction: column;
+}
+
 .registerCardHolder {
     display: flex;
     justify-content: center;
-    padding-top: 5%;
 }
 
 .registerCard {
@@ -159,7 +233,6 @@ input {
     flex-flow: row wrap;
     justify-content: space-between;
     padding-top: 3%;
-    padding-bottom: 3%;
 }
 
 .creditCard {
@@ -171,29 +244,38 @@ input {
 form:not(.addToCart) {
     display: flex;
     flex-direction: column;
-    width: 40%;
+}
+
+#indexMain {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loginMain {
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+#productSpread {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+#productsMain {
+    padding: 0% 40% 0% 40%;
 }
 
 #hero {
     width: 100%;
+    padding-bottom: 2%;
 }
 
-.hearAboutUs {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-}
-
-table,
-th,
-td {
-    border: 1px solid white;
-    border-collapse: collapse;
-    text-align: center;
-}
-
-table {
-    width: 40%;
+#total {
+    text-align: left;
 }
 
 #checkings,
@@ -207,23 +289,63 @@ table {
     justify-content: space-around;
 }
 
-/* 320px is "Mobile S" */
-@media screen and (max-width: 850px) {
+#registerMain,
+#loginMain {
+    display: flex;
+    justify-content: center;
+}
+
+#loginSection {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+/* 1024px is "Laptop" */
+@media screen and (max-width: 1024px) {
+    .cardContainer {
+        width: 25%;
+    }
+
+    #checkoutMain {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 1.75em;
+    }
+}
+
+/* 768px is "Tablet" */
+@media screen and (max-width: 768px) {
+    .cardContainer {
+        width: 33%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
+/* 425px is "Mobile L" */
+@media screen and (max-width: 425px) {
     .cardContainer {
         width: 45%;
     }
-}
 
-@media screen and (max-width: 400px) {
-    .cardContainer {
-        width: 90%;
+    h1 {
+        font-size: 1.25em;
     }
 }
 
-/* 375px is "Mobile M" */
+/* 320px is "Mobile S" */
+@media screen and (max-width: 320px) {
+    .cardContainer {
+        width: 55%;
+    }
 
-/* 425p is "Mobile L" */
-/* 768 is "Tablet" */
-/* 1024 is "Laptop" */
-/* 1440px is "Laptop L" */
-/* 2560 is "4k" */
+    h1 {
+        font-size: 1em;
+    }
+}
